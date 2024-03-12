@@ -4,16 +4,20 @@ void main()
 {
 printf("Enter number of vertices \n");
 scanf("%d",&n);
-printf("Enter the cost matrix \n"); for(i=1;i<=n;i++)
+printf("Enter the cost matrix \n");
+ for(i=1;i<=n;i++)
 {
-for(j=1;j<=n;j++) scanf("%d",&c[i][j]);
+for(j=1;j<=n;j++) 
+ scanf("%d",&c[i][j]);
 visited[i]=0; }
 prim(); }
 prim() {
 int min,b,a,k,count=0,cost=0; min=999;
-visited[1]=1; /* 1st vertex is visited */ while(count<n-1)
+visited[1]=1; /* 1st vertex is visited */ 
+ while(count<n-1)
 {
-min=999; for(i=1;i<=n;i++)
+min=999; 
+ for(i=1;i<=n;i++)
 for(j=1;j<=n;j++)
 if(visited[i] && !visited[j] && min>c[i][j]) /* if i is visited but j is not
 visited and c[i][j] < min*/ {
