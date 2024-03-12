@@ -28,9 +28,11 @@ int queue[20],f,r,u,v;
 f=0;
 
 r=-1;
-queue[++r]=source; while(f<=r)
+queue[++r]=source; 
+  while(f<=r)
 {
-u=queue[f++]; for(v=1;v<=n;v++)
+  u=queue[f++]; 
+  for(v=1;v<=n;v++)
 {
 if(a[u][v]==1 && visited[v]==0) {
 queue[++r]=v;
